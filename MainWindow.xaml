@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPFDataBindingColor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDataBindingColor"
+        mc:Ignorable="d"
+        Title="Colors" Height="210" Width="400">
+    <StackPanel>
+		<Label Content="Colors"/>
+		<ListBox x:Name="lbColor">
+			<ListBoxItem>Blue</ListBoxItem>
+			<ListBoxItem>Red</ListBoxItem>
+			<ListBoxItem>Green</ListBoxItem>
+			<ListBoxItem>Yellow</ListBoxItem>
+		</ListBox>
+		<Label Content="Selected color:" />
+		<TextBlock Width="248" Height="24" x:Name="tbSelectedColor" Text="{Binding ElementName=lbColor,	Path=SelectedItem.Content, Mode=OneWay}"
+				Background="{Binding ElementName=lbColor,	Path=SelectedItem.Content, Mode=OneWay}"/>
+
+	</StackPanel>
+</Window>
