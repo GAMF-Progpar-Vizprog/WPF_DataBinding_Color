@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFDataBindingColor
+namespace WPF_DataBinding_Color
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

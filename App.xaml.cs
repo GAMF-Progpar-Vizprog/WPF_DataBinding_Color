@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WPFDataBindingColor
+namespace WPF_DataBinding_Color
 {
     /// <summary>
     /// Interaction logic for App.xaml
